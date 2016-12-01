@@ -183,7 +183,7 @@ if ( ! class_exists( 'OT_Cleanup' ) ) {
               }
 
               // Get the attachements
-              $attachments = get_children( 'post_type=attachment&post_parent=' . $post->ID );
+              $attachments = get_children( array( 'post_type' => 'attachment', 'post_parent' => $post->ID ) );
 
               // Update the attachments parent ID
               if ( ! empty( $attachments ) ) {
