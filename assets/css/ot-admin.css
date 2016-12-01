@@ -1154,7 +1154,7 @@
   ---------------------------------------------------*/
 .wrap.settings-wrap div.error,
 .wrap.settings-wrap div.updated {
-  margin: 9px 5px 0px 2px !important;
+  margin: 9px 5px 0 2px !important;
 }
  
 /* -------------------------------------------------- 
@@ -1165,18 +1165,18 @@
 }
 #option-tree-settings-api .postbox {
   background: #fff;
-  border: none;
+  border: 0;
   margin: 0 20px;
 }
 #option-tree-settings-api .inside {
-  margin: 0px !important;
-  padding: 0px !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 #option-tree-settings-api > .ui-tabs {
   background: #fff;
   border: 1px solid #ccc;
   border-top: none;
-  margin: 0px 5px 0 2px;
+  margin: 0 5px 0 2px;
   min-width: 533px;
   padding-bottom: 5px;
   position: relative;
@@ -1212,8 +1212,8 @@
 #option-tree-header li {
   display: block;
   float: left;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 #option-tree-header li a {
   color: #999;
@@ -1478,7 +1478,7 @@
 }
 .wrap.settings-wrap .ui-tabs-nav li { 
   border: 1px solid transparent; 
-  border-right-width: 0px; 
+  border-right-width: 0; 
   display: block; margin: 0; 
   -webkit-border-radius: 2px 0 0 2px;
      -moz-border-radius: 2px 0 0 2px;
@@ -1523,14 +1523,14 @@
 .format-setting-label {
   border-bottom: 1px dashed #ccc;
   margin: 0 0 20px 0;
-  padding: 5px 0px 1px 0px;
+  padding: 5px 0 1px 0;
   width: 100%;
 }
 #option-tree-settings-api .description h3,
 #option-tree-settings-api .format-setting-label .label,
 #poststuff .format-setting-label .label {
   background: none;
-  border: none;
+  border: 0;
   color: #222;
   cursor: text;
   display: block;
@@ -1655,7 +1655,7 @@
     width: 100%;
   }
   .format-setting .description {
-    padding-top: 0px;
+    padding-top: 0;
     padding-bottom: 20px;
   }
 }
@@ -1724,9 +1724,9 @@ input.option-tree-ui-input {
 input:hover.option-tree-ui-upload-input,
 input:hover.option-tree-ui-input {
   border-color: #bbb !important;
-  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.0980392);
-     -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.0980392);
-          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.0980392);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.0980392);
+     -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.0980392);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.0980392);
 }
 input:focus.option-tree-ui-upload-input,
 input:focus.option-tree-ui-input {
@@ -1764,19 +1764,19 @@ div.option-tree-ui-media-wrap {
 .option-tree-ui-upload-parent {
   width: auto !important;
   margin-right: 45px;
-  padding: 0px;
+  padding: 0;
   position: relative;
 }
 .ot_upload_media {
-  top: 0px;
-  margin: 0px !important;
+  top: 0;
+  margin: 0 !important;
   position: absolute;
   right: -45px;
   text-indent: -9999px;
 }
 .option-tree-ui-media-wrap a.option-tree-ui-remove-media {
   float: none !important;
-  margin: 0px !important;
+  margin: 0 !important;
   position: absolute !important;
   right: -55px;
   text-indent: -9999px;
@@ -1807,14 +1807,14 @@ div.option-tree-ui-media-wrap {
   width: 99.75%;
 }
 .ot-metabox-wrapper .wp-editor-container {
-  border: none;
+  border: 0;
 }
 .textarea:hover,
 .ot-metabox-wrapper textarea:hover {
   border-color: #bbb !important;
-  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.0980392);
-     -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.0980392);
-          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.0980392);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.0980392);
+     -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.0980392);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.0980392);
 }
 .textarea:focus,
 .ot-metabox-wrapper textarea:focus {
@@ -1831,10 +1831,10 @@ div.option-tree-ui-media-wrap {
   :: Setting Item with Drag & Drop
   ---------------------------------------------------*/
 .option-tree-setting-wrap { 
-  margin-top: 0px; 
+  margin-top: 0; 
 }
 .option-tree-setting-wrap li { 
-  margin: 5px 0px; 
+  margin: 5px 0; 
 }
 .option-tree-setting { 
   border: 1px solid #ccc; 
@@ -1846,9 +1846,9 @@ div.option-tree-ui-media-wrap {
 }
 .option-tree-setting:hover {
   border-color: #999;
-  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.0980392);
-     -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.0980392);
-          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.0980392);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.0980392);
+     -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.0980392);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.0980392);
 }
 .option-tree-setting a { 
   text-decoration: none; 
@@ -1891,7 +1891,7 @@ div.option-tree-ui-media-wrap {
 }
 .button-section {
   position: absolute;
-  right: 0px;
+  right: 0;
   top: 1px;
 }
 .option-tree-setting.is-section { 
@@ -2054,9 +2054,9 @@ li ul .format-setting-wrap {
   padding: 0 0 10px 0;
 }
 li ul .format-setting-label {
-  border: none;
-  padding: 0px;
-  margin: 0px;
+  border: 0;
+  padding: 0;
+  margin: 0;
 }
 
 /* -------------------------------------------------- 
@@ -2183,7 +2183,7 @@ li ul .format-setting-label {
 }
 @media screen and ( min-width: 783px ) {
   #post-body .ot-option-group--checkbox p input {
-    margin-top: 0px !important;
+    margin-top: 0 !important;
   }
 }
 @media screen and ( max-width: 1020px ) {
@@ -2270,7 +2270,7 @@ select.option-tree-ui-select option {
   z-index: 2;
 }
 #option-tree-options-layouts-form .select-wrapper {
-  margin: 0px;
+  margin: 0;
 }
 #option-tree-options-layouts-form select.option-tree-ui-select {
   min-width: 124px;
@@ -2281,8 +2281,8 @@ select.option-tree-ui-select option {
 .type-measurement .select-wrapper {
   margin-right: 0;
   position: absolute;
-  right: 0px;
-  top: 0px;
+  right: 0;
+  top: 0;
 }
 
 /* FireFox */
@@ -2311,7 +2311,7 @@ select.option-tree-ui-select option {
 .format-setting.type-radio label {
   float: left;
   max-width: 90%;
-  padding: 0px;
+  padding: 0;
 }
 #option-tree-settings-api .format-setting.type-checkbox p,
 #option-tree-settings-api .format-setting.type-radio p {
@@ -2331,7 +2331,7 @@ select.option-tree-ui-select option {
   ---------------------------------------------------*/
 .type-radio-image .option-tree-ui-radio-images {
   float: left;
-  margin: 0 10px 10px 0px;
+  margin: 0 10px 10px 0;
 }
 .type-radio-image .option-tree-ui-radio-images img {
   background: #fff;
@@ -2522,7 +2522,7 @@ select.option-tree-ui-select option {
   font-size: 12px !important;
   height: 29px !important;
   line-height: 27px !important;
-  margin-top: 0px;
+  margin-top: 0;
   -webkit-border-radius: 2px;
      -moz-border-radius: 2px;
           border-radius: 2px;
@@ -2536,8 +2536,8 @@ select.option-tree-ui-select option {
 .option-tree-ui-colorpicker-input-wrap .wp-color-result {
   height: 27px;
   outline: 0;
-  margin: 0 5px 5px 0px;
-  top: 0px;
+  margin: 0 5px 5px 0;
+  top: 0;
   -webkit-box-shadow: none;
      -moz-box-shadow: none;
           box-shadow: none;
@@ -2547,7 +2547,7 @@ select.option-tree-ui-select option {
 }
 .option-tree-ui-colorpicker-input-wrap .wp-picker-container .iris-picker {
   border-color: #ccc;
-  margin: 0px 5px 5px 0;
+  margin: 0 5px 5px 0;
   -webkit-border-radius: 2px;
      -moz-border-radius: 2px;
           border-radius: 2px;
@@ -2710,37 +2710,37 @@ select.option-tree-ui-select option {
   float: right;
 }
 .option-tree-ui-button.hug-left {
-  margin-left: 0px;
+  margin-left: 0;
 }
 .option-tree-ui-button.hug-right {
-  margin-right: 0px;
+  margin-right: 0;
 }
 .option-tree-ui-button.pad {
-  padding: 0px 21px;
+  padding: 0 21px;
 }
 .option-tree-ui-button.left-item {
   margin: 5px 0 5px 5px;
-  -webkit-border-top-right-radius: 0px;
-  -webkit-border-bottom-right-radius: 0px;
-  -moz-border-radius-topright: 0px;
-  -moz-border-radius-bottomright: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 .option-tree-ui-button.center-item {
   margin: 5px 0 5px -1px;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 .option-tree-ui-button.right-item {
   margin: 5px 5px 5px -1px;
-  -webkit-border-top-left-radius: 0px;
-  -webkit-border-bottom-left-radius: 0px;
-  -moz-border-radius-topleft: 0px;
-  -moz-border-radius-bottomleft: 0px;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
+  -webkit-border-top-left-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-radius-topleft: 0;
+  -moz-border-radius-bottomleft: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 .option-tree-ui-buttons {
   background: #fff;
@@ -2878,7 +2878,7 @@ ul.ot-gallery-list li {
   background: none repeat scroll 0 0 white;
   border: 1px solid #bbb;
   float: left;
-  margin: 0px 10px 10px 0;
+  margin: 0 10px 10px 0;
   padding: 4px;
   -webkit-border-radius: 2px;
      -moz-border-radius: 2px;
@@ -2894,8 +2894,8 @@ ul.ot-gallery-list li img {
   width: 100%;
 }
 .ot-gallery-buttons a.option-tree-ui-button {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* -------------------------------------------------- 
@@ -3145,17 +3145,17 @@ ul.ot-gallery-list li img {
 #poststuff .type-css pre.ace-chrome:hover,
 #poststuff .type-javascript pre.ace-chrome:hover {
   border-color: #bbb !important;
-  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.0980392);
-     -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.0980392);
-          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.0980392);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.0980392);
+     -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.0980392);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.0980392);
 }
 #option-tree-settings-api pre.ace-chrome.ace_focus,
 #poststuff .type-css pre.ace-chrome.ace_focus,
 #poststuff .type-javascript pre.ace-chrome.ace_focus {
   border-color: #999 !important;
-  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.0980392);
-     -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.0980392);
-          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.0980392);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.0980392);
+     -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.0980392);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.0980392);
 } 
 
 /* -------------------------------------------------- 
@@ -3258,20 +3258,20 @@ a.ui-datepicker-next {
   font-size: 9px;
   padding: 5px 0;
   color: #555;
-  text-shadow: 1px 0px 0px rgba(255,255,255,0.5);
+  text-shadow: 1px 0 0 rgba(255,255,255,0.5);
 }
 .ui-datepicker tbody td {
   border-right: 1px solid #ccc;
   padding: 0;
 }
 .ui-datepicker tbody td:last-child {
-  border-right: 0px;
+  border-right: 0;
 }
 .ui-datepicker tbody tr {
   border-bottom: 1px solid #ccc;
 }
 .ui-datepicker tbody tr:last-child {
-  border-bottom: 0px;
+  border-bottom: 0;
 }
 .ui-datepicker td span, 
 .ui-datepicker td a {
@@ -3282,14 +3282,14 @@ a.ui-datepicker-next {
   height: 29px;
   line-height: 30px;
   color: #555;
-  text-shadow: 1px 0px 0px rgba(255,255,255,0.5);
+  text-shadow: 1px 0 0 rgba(255,255,255,0.5);
 }
 .ui-datepicker-calendar .ui-state-default {
   background-color: #f1f1f1;
 }
 .ui-datepicker-calendar .ui-state-highlight {
-  border-radius: 0px;
-  border: none;
+  border-radius: 0;
+  border: 0;
   color: #0074a2;
 }
 .ui-datepicker-calendar .ui-state-hover {
@@ -3298,7 +3298,7 @@ a.ui-datepicker-next {
 .ui-datepicker-calendar .ui-state-active {
   background-color: #0074a2;
   color: #fff !important;
-  text-shadow: 0px 1px 0px rgba(0,0,0,0.25);
+  text-shadow: 0 1px 0 rgba(0,0,0,0.25);
   position: relative;
 }
 .ui-datepicker-unselectable .ui-state-default {
@@ -3651,7 +3651,7 @@ a.ui-datepicker-next {
 }
 .ui-tpicker-grid-label { 
   background: none; 
-  border: none; 
+  border: 0; 
   margin: 0; 
   padding: 0; 
 }
@@ -3768,7 +3768,7 @@ a.ui-datepicker-next {
 .ot-metabox-tabs.ui-tabs .ot-metabox-nav.ui-tabs-nav li.ui-state-focus {
   background: none;
   border: 1px solid transparent;
-  border-right-width: 0px;
+  border-right-width: 0;
   display: block;
   margin: 0;
   outline: 0;
@@ -3840,7 +3840,7 @@ a.ui-datepicker-next {
 #side-sortables .ot-metabox-tabs.ui-tabs .ot-metabox-nav.ui-tabs-nav li.ui-state-default {
   background: #fafafa;
   border: 1px solid #ccc;
-  border-width: 1px 1px 0px 1px;
+  border-width: 1px 1px 0 1px;
   display: block;
   float: left;
   margin: 0 0 0 3px;
@@ -3854,13 +3854,13 @@ a.ui-datepicker-next {
 #side-sortables .ot-metabox-tabs.ui-tabs .ot-metabox-nav.ui-tabs-nav li:hover {
   background: #f1f1f1;
   border: 1px solid #ccc;
-  border-width: 1px 1px 0px 1px;
+  border-width: 1px 1px 0 1px;
 }
 .ot-theme-option-tabs.ui-tabs .ot-theme-option-nav.ui-tabs-nav li.ui-state-active,
 #side-sortables .ot-metabox-tabs.ui-tabs .ot-metabox-nav.ui-tabs-nav li.ui-state-active {
   background: white;
   border-color: #ccc;
-  border-width: 1px 1px 0px 1px;
+  border-width: 1px 1px 0 1px;
   color: black;
   padding: 0;
   -webkit-border-radius: 2px 2px 0 0;
@@ -3929,7 +3929,7 @@ a.ui-datepicker-next {
   .ot-metabox-tabs.ui-tabs .ot-metabox-nav.ui-tabs-nav li {
     background: #fafafa;
     border: 1px solid #ccc !important;
-    border-width: 1px 1px 0px 1px !important;
+    border-width: 1px 1px 0 1px !important;
     display: inline-block !important;
     margin: 0 0 0 3px !important;
     padding: 0 !important;

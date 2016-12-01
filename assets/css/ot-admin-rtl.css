@@ -6,7 +6,7 @@
   display: block;
   height: 14px;
   float: right;
-  padding: 2px 0px 0 9px;
+  padding: 2px 0 0 9px;
 }
 
 /* -------------------------------------------------- 
@@ -14,14 +14,14 @@
   ---------------------------------------------------*/
 .wrap.settings-wrap div.error,
 .wrap.settings-wrap div.updated {
-  margin: 9px 2px 0px 5px !important;
+  margin: 9px 2px 0 5px !important;
 }
 
 /* -------------------------------------------------- 
   :: OptionTree Wrappers
   ---------------------------------------------------*/
 #option-tree-settings-api > .ui-tabs {
-  margin: 0px 2px 0 5px;
+  margin: 0 2px 0 5px;
   -webkit-box-shadow: inset -146px 0 0 #f1f1f1, inset -147px 0 0 #ccc, 0 1px 3px rgba(0,0,0,0.05);
      -moz-box-shadow: inset -146px 0 0 #f1f1f1, inset -147px 0 0 #ccc, 0 1px 3px rgba(0,0,0,0.05);
           box-shadow: inset -146px 0 0 #f1f1f1, inset -147px 0 0 #ccc, 0 1px 3px rgba(0,0,0,0.05);
@@ -251,7 +251,7 @@ div.option-tree-ui-media-wrap {
 }
 .button-section {
   right: auto;
-  left: 0px;
+  left: 0;
 }
 
 /* -------------------------------------------------- 
@@ -291,7 +291,7 @@ div.option-tree-ui-media-wrap {
   ---------------------------------------------------*/
 .ot-option-group {
   float: right;
-  padding-right: 0px;
+  padding-right: 0;
   padding-left: 5px;
 }
 .ot-option-group--is-last {
@@ -299,7 +299,7 @@ div.option-tree-ui-media-wrap {
 }
 .ot-option-group--icon {
   border-left: 1px solid #ccc;
-  border-right: 0px;
+  border-right: 0;
   left: auto;
   right: 1px;
 }
@@ -307,11 +307,11 @@ div.option-tree-ui-media-wrap {
   padding-left: 5px !important;
   padding-right: 34px !important;
   margin-left: 5px;
-  margin-right: 0px;
+  margin-right: 0;
 }
 .ot-option-group--checkbox {
   float: right;
-  padding-right: 0px;
+  padding-right: 0;
   padding-left: 10px;
 }
 #post-body .ot-option-group--checkbox p {
@@ -339,7 +339,7 @@ div.option-tree-ui-media-wrap {
 .type-measurement .select-wrapper {
   margin-left: 0;
   right: auto;
-  left: 0px;
+  left: 0;
 }
 /* FireFox */
 @-moz-document url-prefix() {
@@ -379,7 +379,7 @@ div.option-tree-ui-media-wrap {
   ---------------------------------------------------*/
 .type-radio-image .option-tree-ui-radio-images {
   float: right;
-  margin: 0 0px 10px 10px;
+  margin: 0 0 10px 10px;
 }
 
 /* -------------------------------------------------- 
@@ -406,17 +406,17 @@ div.option-tree-ui-media-wrap {
 }
 .option-tree-ui-colorpicker-input-wrap .option-tree-ui-colorpicker-label {
   margin-left: 10px;
-  margin-right: 0px;
+  margin-right: 0;
 }
 .type-link-color .option-tree-ui-colorpicker-input-wrap {
   margin-left: 20px;
-  margin-right: 0px;
+  margin-right: 0;
 }
 .option-tree-ui-colorpicker-input-wrap .wp-color-result {
-  margin: 0px 0px 5px 5px;
+  margin: 0 0 5px 5px;
 }
 .option-tree-ui-colorpicker-input-wrap .wp-picker-container .iris-picker {
-  margin: 0px 0px 5px 5px;
+  margin: 0 0 5px 5px;
 }
 
 /* -------------------------------------------------- 
@@ -438,17 +438,17 @@ div.option-tree-ui-media-wrap {
   float: left !important;
 }
 .option-tree-ui-button.hug-left {
-  margin-right: 0px;
+  margin-right: 0;
 }
 .option-tree-ui-button.hug-right {
-  margin-left: 0px;
+  margin-left: 0;
 }
 .option-tree-ui-button.left-item {
   float: right !important;
   margin: 5px 5px 5px 0;
-  -webkit-border-radius: 0px 2px 2px 0px;
-     -moz-border-radius: 0px 2px 2px 0px;
-          border-radius: 0px 2px 2px 0px;
+  -webkit-border-radius: 0 2px 2px 0;
+     -moz-border-radius: 0 2px 2px 0;
+          border-radius: 0 2px 2px 0;
 }
 .option-tree-ui-button.center-item {
   margin: 5px -1px 5px 0;
@@ -456,9 +456,9 @@ div.option-tree-ui-media-wrap {
 .option-tree-ui-button.right-item {
   float: left !important;
   margin: 5px -1px 5px 5px;
-  -webkit-border-radius: 2px 0px 0px 2px;
-     -moz-border-radius: 2px 0px 0px 2px;
-          border-radius: 2px 0px 0px 2px;
+  -webkit-border-radius: 2px 0 0 2px;
+     -moz-border-radius: 2px 0 0 2px;
+          border-radius: 2px 0 0 2px;
 }
 .option-tree-ui-buttons {
   margin: 11px 2px 0 5px;
@@ -488,7 +488,7 @@ ul.ot-gallery-list {
 }
 ul.ot-gallery-list li {
   float: right;
-  margin: 0px 0 10px 10px;
+  margin: 0 0 10px 10px;
 }
 .ot-gallery-buttons {
   float: right;
@@ -538,7 +538,7 @@ ul.ot-gallery-list li {
   right: -1px;
 }
 .ui-datepicker-prev:before {
-  border-right: 0px;
+  border-right: 0;
   border-left: 1px solid #555;
   content: "\f105";
   float: left;
@@ -546,13 +546,13 @@ ul.ot-gallery-list li {
   height: 30px;
 }
 .ui-datepicker-prev {
-  border-right: 0px;
+  border-right: 0;
   border-left: 1px solid #333;
   float: right;
   width: 31px;
 }
 .ui-datepicker-next:before {
-  border-left: 0px;
+  border-left: 0;
   border-right: 1px solid #333;
   content: "\f104";
   float: right;
@@ -560,7 +560,7 @@ ul.ot-gallery-list li {
   height: 30px;
 }
 .ui-datepicker-next {
-  border-left: 0px;
+  border-left: 0;
   border-right: 1px solid #555;
   float: left;
   width: 30px;
@@ -572,7 +572,7 @@ ul.ot-gallery-list li {
   border-left: 1px solid #ccc;
 }
 .ui-datepicker tbody td:first-child {
-  border-left: 0px;
+  border-left: 0;
 }
 .ui-datepicker .ui-datepicker-buttonpane button {
   float: left;
@@ -616,7 +616,7 @@ ul.ot-gallery-list li {
   margin: 0 0 0 -1px;
 }
 .ot-metabox-tabs.ui-tabs .ot-metabox-nav.ui-tabs-nav li {
-  border-width: 1px 1px 1px 0px;
+  border-width: 1px 1px 1px 0;
   -webkit-border-radius: 0 0 2px 2px;
      -moz-border-radius: 0 0 2px 2px;
           border-radius: 0 0 2px 2px;
