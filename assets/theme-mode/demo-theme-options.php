@@ -17,17 +17,17 @@ function custom_theme_options() {
     return false;
 
   /**
-   * Get a copy of the saved settings array. 
+   * Get a copy of the saved settings array.
    */
   $saved_settings = get_option( ot_settings_id(), array() );
-  
+
   /**
-   * Custom settings array that will eventually be 
+   * Custom settings array that will eventually be
    * passes to the OptionTree Settings API Class.
    */
-  $custom_settings = array( 
-    'contextual_help' => array( 
-      'content'       => array( 
+  $custom_settings = array(
+    'contextual_help' => array(
+      'content'       => array(
         array(
           'id'        => 'option_types_help',
           'title'     => __( 'Option Types', 'theme-text-domain' ),
@@ -36,13 +36,13 @@ function custom_theme_options() {
       ),
       'sidebar'       => '<p>' . __( 'Sidebar content goes here!', 'theme-text-domain' ) . '</p>'
     ),
-    'sections'        => array( 
+    'sections'        => array(
       array(
         'id'          => 'option_types',
         'title'       => __( 'Option Types', 'theme-text-domain' )
       )
     ),
-    'settings'        => array( 
+    'settings'        => array(
       array(
         'id'          => 'demo_background',
         'label'       => __( 'Background', 'theme-text-domain' ),
@@ -132,7 +132,7 @@ function custom_theme_options() {
         'class'       => '',
         'condition'   => '',
         'operator'    => 'and',
-        'choices'     => array( 
+        'choices'     => array(
           array(
             'value'       => 'no',
             'label'       => __( 'No', 'theme-text-domain' ),
@@ -302,7 +302,7 @@ function custom_theme_options() {
         'id'          => 'demo_google_fonts',
         'label'       => __( 'Google Fonts', 'theme-text-domain' ),
         'desc'        => sprintf( __( 'The Google Fonts option type will dynamically enqueue any number of Google Web Fonts into the document %1$s. As well, once the option has been saved each font family will automatically be inserted into the %2$s array for the Typography option type. You can further modify the font stack by using the %3$s filter, which is passed the %4$s, %5$s, and %6$s parameters. The %6$s parameter is being passed from %7$s, so it will be the ID of a Typography option type. This will allow you to add additional web safe fonts to individual font families on an as-need basis.', 'theme-text-domain' ), '<code>HEAD</code>', '<code>font-family</code>', '<code>ot_google_font_stack</code>', '<code>$font_stack</code>', '<code>$family</code>', '<code>$field_id</code>', '<code>ot_recognized_font_families</code>' ),
-        'std'         => array( 
+        'std'         => array(
           array(
             'family'    => 'opensans',
             'variants'  => array( '300', '300italic', 'regular', 'italic', '600', '600italic' ),
@@ -363,7 +363,7 @@ function custom_theme_options() {
         'class'       => '',
         'condition'   => '',
         'operator'    => 'and',
-        'settings'    => array( 
+        'settings'    => array(
           array(
             'id'          => 'demo_list_item_content',
             'label'       => __( 'Content', 'theme-text-domain' ),
@@ -499,7 +499,7 @@ function custom_theme_options() {
         'class'       => '',
         'condition'   => '',
         'operator'    => 'and',
-        'choices'     => array( 
+        'choices'     => array(
           array(
             'value'       => 'yes',
             'label'       => __( 'Yes', 'theme-text-domain' ),
@@ -546,7 +546,7 @@ function custom_theme_options() {
         'class'       => '',
         'condition'   => '',
         'operator'    => 'and',
-        'choices'     => array( 
+        'choices'     => array(
           array(
             'value'       => '',
             'label'       => __( '-- Choose One --', 'theme-text-domain' ),
@@ -796,17 +796,17 @@ function custom_theme_options() {
       )
     )
   );
-  
+
   /* allow settings to be filtered before saving */
   $custom_settings = apply_filters( ot_settings_id() . '_args', $custom_settings );
-  
+
   /* settings are not the same update the DB */
   if ( $saved_settings !== $custom_settings ) {
-    update_option( ot_settings_id(), $custom_settings ); 
+    update_option( ot_settings_id(), $custom_settings );
   }
-  
+
   /* Lets OptionTree know the UI Builder is being overridden */
   global $ot_has_custom_theme_options;
   $ot_has_custom_theme_options = true;
-  
+
 }

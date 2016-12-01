@@ -11,7 +11,7 @@
 if ( ! class_exists( 'OT_Post_Formats' ) ) {
 
   class OT_Post_Formats {
-    
+
     /**
      * Class Constructor
      *
@@ -21,11 +21,11 @@ if ( ! class_exists( 'OT_Post_Formats' ) ) {
      * @since     2.3.0
      */
     public function __construct() {
-    
+
       $this->setup_actions();
-      
+
     }
-    
+
     /**
      * Setup the default filters and actions
      *
@@ -46,7 +46,7 @@ if ( ! class_exists( 'OT_Post_Formats' ) ) {
       add_filter( 'pre_ping',   array( $this, 'pre_ping_post_links' ), 10, 3 );
 
     }
-  
+
     /**
      * Builds the default Meta Boxes.
      *
@@ -78,7 +78,7 @@ if ( ! class_exists( 'OT_Post_Formats' ) ) {
       ) );
 
       /**
-       * Register our meta boxes using the 
+       * Register our meta boxes using the
        * ot_register_meta_box() function.
        */
       foreach( $meta_boxes as $meta_box ) {
@@ -88,10 +88,10 @@ if ( ! class_exists( 'OT_Post_Formats' ) ) {
       }
 
     }
-    
+
     /**
      * Setup pings for the link & quote URLs
-     * 
+     *
      * @param     array     $post_links The URLs to ping
      * @param     array     $pung Pinged URLs
      * @param     int       $post_id Post ID
@@ -101,15 +101,15 @@ if ( ! class_exists( 'OT_Post_Formats' ) ) {
      * @since     2.3.0
      */
     public function pre_ping_post_links( $post_links, $pung, $post_id = null ) {
-      
+
       $_link = get_post_meta( $post_id, '_format_link_url', true );
       if ( ! empty( $_link ) && ! in_array( $_link, $pung ) && ! in_array( $_link, $post_links ) )
         $post_links[] = $_link;
-      
+
       $_quote = get_post_meta( $post_id, '_format_quote_source_url', true );
       if ( ! empty( $_quote ) && ! in_array( $_quote, $pung ) && ! in_array( $_quote, $post_links ) )
         $post_links[] = $_quote;
-      
+
     }
 
   }

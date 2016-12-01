@@ -1,6 +1,6 @@
 <?php
 /**
- * Initialize the custom Meta Boxes. 
+ * Initialize the custom Meta Boxes.
  */
 add_action( 'admin_init', 'custom_meta_boxes' );
 
@@ -13,9 +13,9 @@ add_action( 'admin_init', 'custom_meta_boxes' );
  * @since     2.0
  */
 function custom_meta_boxes() {
-  
+
   /**
-   * Create a custom meta boxes array that we pass to 
+   * Create a custom meta boxes array that we pass to
    * the OptionTree Meta Box API Class.
    */
   $my_meta_box = array(
@@ -72,9 +72,9 @@ function custom_meta_boxes() {
       )
     )
   );
-  
+
   /**
-   * Register our meta boxes using the 
+   * Register our meta boxes using the
    * ot_register_meta_box() function.
    */
   if ( function_exists( 'ot_register_meta_box' ) )
