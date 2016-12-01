@@ -1140,7 +1140,7 @@ if ( ! function_exists( 'ot_save_css' ) ) {
     if ( isset( $settings['settings'] ) ) {
 
       /* loop through sections and insert CSS when needed */
-      foreach( $settings['settings'] as $k => $setting ) {
+      foreach( $settings['settings'] as $setting ) {
 
         /* is the CSS option type */
         if ( isset( $setting['type'] ) && 'css' == $setting['type'] ) {
@@ -2531,7 +2531,7 @@ function ot_google_font_stack( $families, $field_id ) {
   $ot_set_google_fonts = get_theme_mod( 'ot_set_google_fonts', array() );
 
   if ( ! empty( $ot_set_google_fonts ) ) {
-    foreach( $ot_set_google_fonts as $id => $sets ) {
+    foreach( $ot_set_google_fonts as $sets ) {
       foreach( $sets as $value ) {
         $family = isset( $value['family'] ) ? $value['family'] : '';
         if ( $family && isset( $ot_google_fonts[$family] ) ) {

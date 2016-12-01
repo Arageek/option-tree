@@ -36,7 +36,7 @@ if ( ! function_exists( 'ot_type_creating_options' ) ) {
         echo '<p>' . __( 'You are required to choose one of the supported option types when creating a new option. Here is a list of the available option types. For more information about each type click the <code>Option Types</code> tab to the left.', 'option-tree' ) . '</p>';
 
         echo '<ul class="docs-ul">';
-        foreach( ot_option_types_array() as $key => $value )
+        foreach( ot_option_types_array() as $value )
           echo '<li>' . $value . '</li>';
         echo '</ul>';
 

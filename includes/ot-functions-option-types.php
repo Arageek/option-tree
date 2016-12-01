@@ -1255,7 +1255,7 @@ if ( ! function_exists( 'ot_type_google_fonts' ) ) {
             if ( in_array( 'subsets', $ot_recognized_google_fonts_fields ) ) {
               $subsets = isset( $value['subsets'] ) ? $value['subsets'] : array();
               echo '<div class="option-tree-google-font-subsets" data-field-id-prefix="' . esc_attr( $field_id ) . '-' . $key . '-" data-field-name="' . esc_attr( $field_name ) . '[' . $key . '][subsets]" data-field-class="option-tree-ui-checkbox ' . esc_attr( $field_class ) . '">';
-              foreach ( ot_recognized_google_font_subsets( $field_id, $family ) as $subset_key => $subset ) {
+              foreach ( ot_recognized_google_font_subsets( $field_id, $family ) as $subset ) {
                 echo '<p class="checkbox-wrap">';
                   echo '<input type="checkbox" name="' . esc_attr( $field_name ) . '[' . $key . '][subsets][]" id="' . esc_attr( $field_id ) . '-' . $key . '-' . $subset . '" value="' . esc_attr( $subset ) . '" ' . checked( in_array( $subset, $subsets ), true, false )  . ' class="option-tree-ui-checkbox ' . esc_attr( $field_class ) . '" />';
                   echo '<label for="' . esc_attr( $field_id ) . '-' . $key . '-' . $subset . '">' . esc_html( $subset ) . '</label>';
