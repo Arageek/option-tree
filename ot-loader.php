@@ -387,9 +387,6 @@ if ( ! class_exists( 'OT_Loader' ) ) {
         $files[] = 'ot-functions-docs-page';
       }
 
-      /* include the cleanup api */
-      $files[] = 'ot-cleanup-api';
-
       /* require the files */
       foreach ( $files as $file ) {
         $this->load_file( OT_DIR . "includes" . DIRECTORY_SEPARATOR . "{$file}.php" );
